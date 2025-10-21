@@ -19,7 +19,7 @@ C++ Formatter — расширение для VS Code, которое форма
 ## Установка
 1. Клонируйте репозиторий:  
 ```bash
-git clone https://github.com/USERNAME/cpp-formatter.git
+git clone https://github.com/ITSDENISSKA/cpp-formatter-vscode.git
 ````
 
 2. Откройте проект в VS Code

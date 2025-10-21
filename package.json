@@ -1,7 +1,17 @@
 {
-  "name": "cpp-formatter",
+  "name": "cpp-formatter-vscode",
   "displayName": "C++ Formatter",
   "description": "Форматирование C++ файлов с помощью clang-format",
+  "author": {
+    "name": "Denis Fotiev",
+    "email": "fotiev.d1991@gmail.com",
+    "url": "https://github.com/ITSDENISSKA/cpp-formatter-vscode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ITSDENISSKA/cpp-formatter-vscode.git"
+  },
+  "publisher": "itsdenisska",
   "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
@@ -27,7 +37,13 @@
         "cppFormatter.style": {
           "type": "string",
           "default": "LLVM",
-          "enum": ["LLVM", "Google", "Chromium", "Mozilla", "WebKit"],
+          "enum": [
+            "LLVM",
+            "Google",
+            "Chromium",
+            "Mozilla",
+            "WebKit"
+          ],
           "description": "Выбор базового стиля clang-format"
         },
         "cppFormatter.tabSize": {
@@ -38,7 +54,11 @@
         "cppFormatter.useTab": {
           "type": "string",
           "default": "Never",
-          "enum": ["Always", "Never", "ForIndentation"],
+          "enum": [
+            "Always",
+            "Never",
+            "ForIndentation"
+          ],
           "description": "Использовать табуляцию вместо пробелов"
         },
         "cppFormatter.columnLimit": {
@@ -49,7 +69,11 @@
         "cppFormatter.breakBeforeBinaryOperators": {
           "type": "string",
           "default": "None",
-          "enum": ["None", "All", "NonAssignment"],
+          "enum": [
+            "None",
+            "All",
+            "NonAssignment"
+          ],
           "description": "Перенос строки перед бинарными операторами"
         },
         "cppFormatter.indentCaseLabels": {
@@ -65,9 +89,9 @@
     "compile": "tsc -watch -p ./"
   },
   "devDependencies": {
+    "@types/node": "^24.9.1",
     "@types/vscode": "^1.80.0",
-    "typescript": "^5.2.0",
     "tslint": "^6.1.3",
-    "vscode-test": "^2.3.0"
+    "typescript": "^5.2.0"
   }
 }
